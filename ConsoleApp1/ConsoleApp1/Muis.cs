@@ -6,16 +6,19 @@ namespace ConsoleApp1
 {
     class Muis
     {
+        
         private bool isLevend;
 
         public Muis()
         {
             // zet isLevend op true
+            this.isLevend = true;
         }
 
         public void Kill()
         {
             // zet isLevend op false
+            this.isLevend = false;
         }
 
         public override string ToString()
@@ -25,7 +28,7 @@ namespace ConsoleApp1
                 return "Nog steeds levend haha!";
             } else
             {
-                return "...";
+                return "Ik ben niet meer levend helaas...";
             }
         }
     }
